@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <title>SocialTech</title>
     <meta charset="UTF-8">
-    <meta name="description" content="SocialTechはEdTech業界のリーディングカンパニーを目指します。">
+    <meta name="description" content="SocialTech aims to become a leading company in the EdTech industry.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="SocialTech - Leading EdTech Company">
+    <meta property="og:description" content="SocialTech aims to become a leader in the EdTech industry, offering innovative programming education and training solutions.">
+    <meta property="og:image" content="https://example.com/images/og-image.png">
+    <!-- Import Google Fonts: Roboto for a modern and professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ヘッダー -->
+    <!-- Header -->
     <header>
-        <!-- ロゴ -->
+        <!-- Logo -->
         <a href="index.html" id="logo">
-            <img src="images/logo.png" alt="トップページに戻る">
+            <img src="images/logo.png" alt="Return to homepage">
         </a>
-        <!--PC用ナビゲーション -->
+        <!--Navigation for PC -->
         <nav id="nav-pc">
             <ul>
                 <li><a href="mission.html">MISSION</a></li>
@@ -25,20 +30,20 @@
                 <li><a href="index.html#contact">CONTACT</a></li>
             </ul>
         </nav>
-        <!-- スマホ用メニューボタン -->
+        <!-- Menu button for mobile -->
         <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
-            <img src="images/button-menu.png" alt="ナビゲーションを開く">
+            <img src="images/button-menu.png" alt="Open navigation">
         </button>
-        <!-- スマホ用ナビゲーション -->
+        <!-- Navigation for mobile -->
         <div id="nav-sp">
             <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
-                <img src="images/button-close.png" alt="ナビゲーションを閉じる">
+                <img src="images/button-close.png" alt="Close navigation">
             </button>
 
             <nav>
                 <ul>
                     <li>
-                        <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img src="images/logo-sp.png" alt="トップページに戻る"></a>
+                        <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img src="images/logo-sp.png" alt="Return to homepage"></a>
                     </li>
                     <li><a class="menu" href="mission.html" onclick="document.getElementById('nav-sp').style.display = 'none'">MISSION</a></li>
                     <li><a class="menu" href="product.html" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a></li>
@@ -50,328 +55,317 @@
             </nav>
             <div id="sns">
                 <a href="https://www.facebook.com/sejuku2013">
-                    <img src="images/button-facebook.png" alt="Facebookのリンク">
+                    <img src="images/button-facebook.png" alt="Follow us on Facebook">
                 </a>
                 <a href="https://twitter.com/samuraijuku">
-                    <img src="images/button-twitter.png" alt="Twitterのリンク">
+                    <img src="images/button-twitter.png" alt="Check out X">
                 </a>
                 <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g">
-                    <img src="images/button-youtube.png" alt="YouTubeのリンク">
+                    <img src="images/button-youtube.png" alt="Follow us on YouTube">
                 </a>
             </div>
         </div>
     </header>
     <main>
         <article>
-            <!-- メインビジュアル -->
+            <!-- Main Visual -->
             <section id="main-visual">
                 <div id="main-message">
                     <h1>WORLD PEACE</h1>
-                    <p>IT教育で世界平和を実現する</p>
+                    <p>Achieving world peace through IT education</p>
                 </div>
-                <img src="images/index/index-main.png" alt="PCの周りに集まる多国籍の仲間たち">
+                <img src="images/index/index-main.png" alt="A group of multinational friends gathered around a PC">
             </section>
-            <!--ミッション-->
+            <!-- Mission Section -->
             <section id="mission">
                 <h2 class="index-h2">MISSION</h2>
                 <div id="mission-flex">
                     <div>
-                        <img id="mission-photo" src="images/index/index-mission.png" alt="屋外のベンチで写真を撮影する多国籍の仲間たち">
-                        <h3>世界平和の実現</h3>
+                        <img id="mission-photo" src="images/index/index-mission.png" alt="Multinational friends taking a photo on a bench">
+                        <h3>Realizing World Peace</h3>
                         <p>
-                            人類の悲願である世界平和。世界平和を脅かす様々な社会問題を解決するためには、イノベーションをどんどん起こしていく必要があります。SocialTechは、プログラミング教育を通してイノベーターを輩出することで、世界平和という大きなテーマに挑んでいきます。  
+                            The ultimate goal of humanity is world peace. To solve the many societal issues that threaten global peace, innovation is essential. SocialTech aims to tackle this grand theme by nurturing innovators through programming education.   
                         </p>
                     </div>
                     <div>
                         <img id="s2dgs" src="images/index/s2dgs.png" alt="S2DGs">
-                        <h3>S2DGsの実現</h3>
-                        <p>国連が掲げる「Sustainable Development Goals（持続可能な開発目標）」に含まれる17つのグローバル目標のうち、以下の5つの目標の実現をミッションとしてサービスを展開しています。</p>
+                        <h3>Achieving the S2DGs</h3>
+                        <p>Among the 17 global goals set by the United Nations for Sustainable Development (SDGs), SocialTech is committed to realizing five specific goals through our services.</p>
                         <a href="mission.html">
-                            <img src="images/button-more.png" alt="もっとみる">
+                            <img src="images/button-more.png" alt="Learn more">
                         </a>
                     </div>
                 </div>
             </section>
-            <!-- プロダクト -->
+            <!-- Product Section -->
             <section id="product">
                 <h2 class="index-h2">PRODUCT</h2>
                 <div class="product-flex">
                     <div id="product-left">
                         <div>
-                            <img class="product-photo" src="images/index/index-mantoman.png" alt="PCでコードを書く男性">
+                            <img class="product-photo" src="images/index/index-mantoman.png" alt="A man writing code on a PC">
                             <div class="product-explain">
                                 <span>MAN TO MAN</span>
-                                <h3>プログラミング教育</h3>
-                                <p>2013年より日本で唯一の専属講師によるマンツーマンのプログラミングレッスンを開始。AI/人工知能やウェブデザインの学習も可能です。</p>
+                                <h3>Programming Education</h3>
+                                <p>Since 2013, SocialTech has been offering one-on-one programming lessons with dedicated instructors, the only such service in Japan. AI/Artificial Intelligence and web design courses are also available.</p>
                             </div>
                         </div>
                         <div>
-                            <img class="product-photo" src="images/index/index-career.png" alt="笑顔で話し合う2人の男性">
+                            <img class="product-photo" src="images/index/index-career.png" alt="Two men discussing with smiles">
                             <div class="product-explain">
                                 <span>CAREER</span>
-                                <h3>人材紹介事業</h3>
-                                <p>エンジニアへの転職に特化した履歴書や職務経歴書のアドバイスや面接対策を行い、豊富な求人の中から最適なキャリア選択を支援します。</p>
+                                <h3>Career Introduction Service</h3>
+                                <p>We provide advice on resumes and job history for those looking to transition into engineering roles, and offer interview preparation support. We help clients choose the optimal career path from a wealth of job opportunities.</p>
                             </div>
                         </div>
                     </div>
                     <div id="product-right">
                         <div>
-                            <img class="product-photo" src="images/index/index-media.png" alt="スマートフォンを操作する人">
+                            <img class="product-photo" src="images/index/index-media.png" alt="Person using a smartphone">
                             <div class="product-explain">
                                 <span>MEDIA</span>
-                                <h3>プログラミング学習メディア</h3>
-                                <p>月間200万人に読まれる日本最大級のプログラミング学習サイト「SocialTech Blog」やYouTubeチャネルにて学習情報を発信しています。</p>
+                                <h3>Programming Learning Media</h3>
+                                <p>We operate "SocialTech Blog," one of Japan's largest programming learning platforms, read by over 2 million people monthly, and also share learning information on our YouTube channel.</p>
                             </div>
                         </div>
                         <div>
-                            <img class="product-photo" src="images/index/index-b2b.png" alt="講演中の男性とそれを聴く人々">
+                            <img class="product-photo" src="images/index/index-b2b.png" alt="Speaker presenting to an audience">
                             <div class="product-explain">
                                 <span>B2B</span>
-                                <h3>法人研修事業</h3>
-                                <p>社員のスキルアップ・資格取得・福利厚生を目的としたプログラミング法人研修。貴社の事業モデルに合わせた研修内容の提案を致します。</p>
+                                <h3>Corporate Training Service</h3>
+                                <p>We offer corporate programming training tailored to your business model, focusing on employee skill development, certification acquisition, and welfare improvement.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="product-more">
                     <a href="product.html">
-                        <img src="images/button-more.png" alt="もっとみる">
+                        <img src="images/button-more.png" alt="Learn more">
                     </a>
                 </div>
             </section>
             <!-- ABOUT US -->
             <section id="aboutus">
                 <h2 class="index-h2">ABOUT US</h2>
-                <h3>3つの組織文化</h3>
+                <h3>Three Organizational Cultures</h3>
                 <div>
                     <table class="culture-table">
                         <tr>
                             <td class="culture-num">01</td>
-                            <th><span class="culture-en">FLEXIBLE</span><br>フレキシブル</th>
+                            <th><span class="culture-en">FLEXIBLE</th>
                         </tr>
                         <tr>
                             <td>
-                                <!--空のセル-->
+
                             </td>
-                            <td class="culture-description">リモートワーク、フルフレックス、副業推奨など1人1人が最大限のパフォーマンスを発揮できる柔軟な働き方を促進しています。</td>
+                            <td class="culture-description">We promote flexible work styles, such as remote work, full flex time, and side jobs, to ensure everyone can perform at their best.</td>
                         </tr>
                         <tr>
                             <td class="culture-num">02</td>
-                            <th><span class="culture-en">TEAL</span><br>ティール</th>
+                            <th><span class="culture-en">TEAL</th>
                         </tr>
                         <tr>
                             <td>
-                                <!--空のセル-->
+
                             </td>
-                            <td class="culture-description">会社全体を1つの生命体として捉え、お互いが深く結びついた一階層型 組織として部署・チーム関係なく課題解決をできる組織を目指しています。</td>
+                            <td class="culture-description">We aim to function as a single, interconnected entity, operating as a flat organization where departments and teams collaborate seamlessly.</td>
                         </tr>
                         <tr>
                             <td class="culture-num">03</td>
-                            <th><span class="culture-en">SELF REALIZATION</span><br>自己実現</th>
+                            <th><span class="culture-en">SELF REALIZATION</th>
                         </tr>
                         <tr>
                             <td>
                                 <!--空のセル-->
                             </td>
-                            <td class="culture-description">クオーター毎に経営・部署・個人ごとにOKRを設定し個人のキャリアと 会社の目指す方向の軌道修正を行っております。</td>
+                            <td class="culture-description">We set OKRs at the company, department, and individual levels every quarter to align personal career goals with the company's direction.</td>
                         </tr>
                     </table>
-                    <img class="culture-img" src="images/index/index-aboutus1.png" alt="笑顔で話し合う2人の女性">
+                    <img class="culture-img" src="images/index/index-aboutus1.png" alt="Two women smiling and discussing">
                 </div>
-                <img class="culture-img2" src="images/index/index-aboutus2.png" alt="笑顔で話し合う3人の男女">
+                <img class="culture-img2" src="images/index/index-aboutus2.png" alt="Three people, two men and a woman, smiling and discussing">
             </section>
             <!-- VISION -->
             <section id="vision">
                 <h2 class="index-h2">VISION</h2>
-                <h3>7つの行動指針</h3>
+                <h3>7 Action Guidelines</h3>
                 <div>
                     <div class="vision-box">
                         <img src="images/index/vision-01.png" alt="01">
                         <div>
                             <h4>CUSTOMER IS BOSS</h4>
-                            <h5>あなたのボスは顧客である</h5>
-                            <p>私たちは常にお客様志向で行動し、お客様を喜ばせ、期待値を超えた感動を提供することを大切にします。</p>
+                            <h5>Your Boss is the Customer</h5>
+                            <p>We always act with a customer-centric approach, aiming to provide joy and exceed their expectations.</p>
                         </div>
                     </div>
                     <div class="vision-box">
                         <img src="images/index/vision-02.png" alt="02">
                         <div>
                             <h4>MOVE FAST</h4>
-                            <h5>早さは価値</h5>
-                            <p>素早く試し、素早く実行することで新しい気付きや発見を見つけていきます。</p>
+                            <h5>Speed Adds Value</h5>
+                            <p>By acting and executing quickly, we discover new insights and breakthroughs.</p>
                         </div>
                     </div>
                     <div class="vision-box">
                         <img src="images/index/vision-03.png" alt="03">
                         <div>
                             <h4>IMPACT DRIVEN</h4>
-                            <h5>作業するのは仕事ではない</h5>
-                            <p>問題から考え、成果とは何かを考え続け、インパクトのある成果を生むために仕事をしていきます。</p>
+                            <h5>Work is About Impact</h5>
+                            <p>We think about the problems we aim to solve, and continuously focus on achieving impactful results.</p>
                         </div>
                     </div>
                     <div class="vision-box">
                         <img src="images/index/vision-04.png" alt="04">
                         <div>
-                            <h4>SAVE TIME, SAVE MONE</h4>
-                            <h5>浪費は命取りになる</h5>
-                            <p>少ないコストでできる方法を考えます。お金だけでなく、人の時間をいただいている自覚を持ち、あらゆるリソースを有意義に活用します。</p>
+                            <h4>SAVE TIME, SAVE MONEY</h4>
+                            <h5>Waste is a Deal Breaker</h5>
+                            <p>We consider how to do things cost-effectively. We value not just money but also people's time, and utilize all resources wisely.</p>
                         </div>
                     </div>
                     <div class="vision-box">
                         <img src="images/index/vision-05.png" alt="05">
                         <div>
                             <h4>BE GENTLE</h4>
-                            <h5>「優しくない」をなくす</h5>
-                            <p>社会をすこしずつ優しくしていきます。自分、家族、同僚、顧客、他人、全ての人に優しくいることを心がけます。</p>
+                            <h5>Eliminate Harshness</h5>
+                            <p>We strive to make society kinder, not just for ourselves, but for our families, colleagues, customers, and everyone we interact with.</p>
                         </div>
                     </div>
                     <div class="vision-box">
                         <img src="images/index/vision-06.png" alt="06">
                         <div>
                             <h4>ABC</h4>
-                            <h5>当たり前の事をバカにせずにちゃんとやる</h5>
-                            <p>礼儀、健康、嘘をつかない。当たり前の事が出来ているかを常に自問し、当たり前の基準を高く持って行動します。</p>
+                            <h5>Do the Basics Right</h5>
+                            <p>We prioritize fundamental values such as etiquette, health, and honesty, always aiming to meet high standards of basic conduct.</p>
                         </div>
                     </div>
                     <div class="vision-box">
                         <img src="images/index/vision-07.png" alt="07">
                         <div>
                             <h4>ZTI</h4>
-                            <h5>絶対的当事者意識</h5>
-                            <p>役職や役割に応じた相対的な当事者意識ではなく、自身の身で起こることすべてに対する絶対的な当事者意識を持ちます。</p>
+                            <h5>Absolute Ownership</h5>
+                            <p>We take absolute ownership of everything that happens in our lives, rather than just relative responsibility based on our roles.</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- 会社概要 -->
+            <!-- Company Overview -->
             <section id="company">
                 <h2 class="index-h2">COMPANY</h2>
-                <h3>会社概要</h3>
                 <table id="company-table">
                     <tr>
-                        <th class="tableheader tableheader-first">会社名</th>
-                        <td class="cell cell-first">株式会社SocialTech</td>
+                        <th class="tableheader tableheader-first">Company Name</th>
+                        <td class="cell cell-first">SocialTech Inc.</td>
                     </tr>
                     <tr>
-                        <th class="tableheader">所在地</th>
-                        <td class="cell">〒101-0022 東京都千代田区神田練塀町300番地 住友不動産秋葉原駅前ビル5F<br>JR「秋葉原駅」より徒歩1分</td>
+                        <th class="tableheader">Location</th>
+                        <td class="cell">300 Kanda-Neribei-cho, Chiyoda-ku, Tokyo 101-0022<br>Sumitomo Fudosan Akihabara Station Front Building 5F<br>1-minute walk from JR "Akihabara Station"</td>
                     </tr>
                     <tr>
-                        <th class="tableheader">代表者</th>
-                        <td class="cell">代表取締役 田中 太郎</td>
+                        <th class="tableheader">Representative</th>
+                        <td class="cell">CEO Taro Tanaka</td>
                     </tr>
                     <tr>
-                        <th class="tableheader">設立</th>
-                        <td class="cell">2015年3月19日</td>
+                        <th class="tableheader">Established</th>
+                        <td class="cell">March 19, 2015</td>
                     </tr>
                 </table>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.068855133681!2d139.77207767578852!3d35.69992317258122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188fee13660e23%3A0x77137876edf742ac!2z5L2P5Y-L5LiN5YuV55Sj56eL6JGJ5Y6f6aeF5YmN44OT44Or!5e0!3m2!1sja!2sjp!4v1724938607652!5m2!1sja!2sjp" style="border:0" allowfullscreen="" loading="lazy">
                 </iframe>
             </section>
-            <!-- お問い合わせフォーム -->
+            <!-- Contact Form -->
             <section id="contact">
-                <h2 class="index-h2">CONTACT</h2>
-                <h3>お問い合わせ</h3>
+                <h2 class="index-h2">CONTACT US</h2>
                 <form>
                     <div>
                         <div class="contact-heading">
-                            <label class="contact-label">お名前<span class="contact-span">必須</span></label>
+                            <label class="contact-label">Name<span class="contact-span">*</span></label>
                         </div>
                         <div>
-                            <input type="text" name="name" placeholder="入力してください" class="contact-textbox">
+                            <input type="text" name="name" placeholder="Please enter your name" class="contact-textbox" required>
                         </div>
                     </div>
                     <div>
                         <div class="contact-heading">
-                            <label class="contact-label">フリガナ<span class="contact-span">必須</span></label>
+                            <label class="contact-label">Email<span class="contact-span">*</span></label>
                         </div>
                         <div>
-                            <input type="text" name="hurigana" placeholder="入力してください" class="contact-textbox">
+                            <input type="email" name="email" placeholder="Please enter your email" class="contact-textbox" required>
                         </div>
                     </div>
                     <div>
                         <div class="contact-heading">
-                            <label class="contact-label">メールアドレス<span class="contact-span">必須</span></label>
+                            <label class="contact-label">Phone Number</label>
                         </div>
                         <div>
-                            <input type="text" name="email" placeholder="入力してください" class="contact-textbox">
+                            <input type="tel" name="tel" placeholder="Please enter your phone number" class="contact-textbox">
                         </div>
                     </div>
                     <div>
                         <div class="contact-heading">
-                            <label class="contact-label">電話番号</label>
+                            <label class="contact-label">Inquiry Details<span class="contact-span">*</span></label>
                         </div>
                         <div>
-                            <input type="text" name="tel" placeholder="入力してください" class="contact-textbox">
+                            <textarea class="contact-textarea" placeholder="Please enter your inquiry" name="message" required></textarea>
                         </div>
                     </div>
                     <div>
                         <div class="contact-heading">
-                            <label class="contact-label">お問い合わせ内容<span class="contact-span">必須</span></label>
+                            <label class="contact-label">Preferred Contact Method<span class="contact-span" required>*</span></label>
                         </div>
                         <div>
-                            <textarea class="contact-textarea" placeholder="入力してください" name="message"></textarea>
+                            <input class="radiobutton" type="radio" value="tel" name="contact" checked><label>Phone</label>
+                            <input class="radiobutton" type="radio" value="mail" name="contact"><label>Email</label>
+                            <input class="radiobutton" type="radio" value="both" name="contact"><label>Either</label>
                         </div>
                     </div>
                     <div>
                         <div class="contact-heading">
-                            <label class="contact-label">ご希望の連絡先<span class="contact-span">必須</span></label>
-                        </div>
-                        <div>
-                            <input class="radiobutton" type="radio" value="tel" name="contact" checked><label>お電話</label>
-                            <input class="radiobutton" type="radio" value="mail" name="contact"><label>メール</label>
-                            <input class="radiobutton" type="radio" value="both" name="contact"><label>どちらでも</label>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="contact-heading">
-                            <label class="contact-label">個人情報の取り扱い</label>
+                            <label class="contact-label">Privacy Policy</label>
                         </div>
                         <div>
                             <details>
-                                <summary>お問い合わせフォームの個人情報の取り扱いについて</summary>
+                                <summary>Privacy Policy Information</summary>
                                 <div>
                                     <dl>
-                                        <dt>１．組織の名称又は氏名</dt>
-                                        <dd>株式会社SocialTech</dd>
-                                        <dt>２．個人情報保護管理者（若しくはその代理人）の氏名又は職名、所属及び連絡先</dt>
+                                        <dt>1. Organization Name or Representative</dt>
+                                        <dd>SocialTech Inc.</dd>
+                                        <dt>2. Contact for Privacy Inquiries</dt>
                                         <dd>
-                                            <p>鈴木 一郎 コーポレート部</p>
-                                            <p>メールアドレス:samurai@example.com</p>
-                                            <p>TEL:03-1234-5678</p>
+                                            <p>Ichiro Suzuki, Corporate Department</p>
+                                            <p>Email: samurai@example.com</p>
+                                            <p>Phone: 03-1234-5678</p>
                                         </dd>
-                                        <dt>３．個人情報の利用目的</dt>
+                                        <dt>3. Purpose of Collecting Personal Information</dt>
                                         <dd>
                                             <ul>
-                                                <li>本サービス及び本サービスに関連する情報の提供又はそれらに関する連絡のため</li>
-                                                <li>ユーザーの本人確認のため</li>
-                                                <li>当社サービスのご案内のため</li>
-                                                <li>当社の商品等の広告または宣伝（電子メールによるものを含むものとします。）</li>
+                                                <li>To provide information related to our services</li>
+                                                <li>For verifying user identity</li>
+                                                <li>To send updates about our services</li>
+                                                <li>For advertising and promoting our products (including email marketing)</li>
                                             </ul>
                                         </dd>
-                                        <dt>４．個人情報の取り扱い業務の委託</dt>
-                                        <dd>個人情報の取扱業務の全部または一部を外部に業務委託する場合があります。その際、弊社は、個人情報を適切に保護できる管理体制を敷き実行していることを条件として委託先を厳選したうえで、機密保持契約を委託先と締結し、お客様の個人情報を厳密に管理させます。</dd>
-                                        <dt>５．個人情報の開示等の請求</dt>
+                                        <dt>4. Third-Party Handling of Personal Information</dt>
+                                        <dd>We may outsource some or all of the handling of personal information to third parties. We ensure that any such parties are contractually bound to protect your data through strict confidentiality agreements.</dd>
+                                        <dt>5. Requesting Access to Personal Information</dt>
                                         <dd>
-                                            お客様は、弊社に対してご自身の個人情報の開示等（利用目的の通知、開示、内容の訂正・追加・削除、利用の停止または消去、第三者への提供の停止）に関して、当社問合わせ窓口に申し出ることができます。<br>
-                                            その際、弊社はお客様ご本人を確認させていただいたうえで、合理的な期間内に対応いたします。<br>
-                                            なお、個人情報に関する弊社問合わせ先は、次の通りです。
+                                            You have the right to request access, corrections, deletions, or the cessation of use of your personal information.<br>
+                                            Please contact us if you would like to make any such requests.
                                         </dd>
                                         <dd>
-                                            <p>株式会社SocialTech 個人情報問合せ窓口</p>
-                                            <p>〒150-0043 東京都千代田区神田練塀町300番地 住友不動産秋葉原駅前ビル5F</p>
-                                            <p>メールアドレス:samurai@example.com TEL:03-1234-5678</p>
+                                            <p>SocialTech Inc. Privacy Desk</p>
+                                            <p>5F, Sumitomo Fudosan Akihabara Station Front Building, 300 Kanda-Neribei-cho, Chiyoda-ku, Tokyo 101-0022</p>
+                                            <p>Email: samurai@example.com Phone: 03-1234-5678</p>
                                         </dd>
-                                        <dt>６．個人情報を提供されることの任意性について</dt>
-                                        <dd>お客様がご自身の個人情報を弊社に提供されるか否かは、お客様のご判断によりますが、もしご提供されない場合には、適切なサービスが提供できない場合がありますので予めご了承ください。</dd>
+                                        <dt>6. Voluntary Nature of Providing Personal Information</dt>
+                                        <dd>Providing personal information is voluntary. However, if you choose not to provide certain information, we may be unable to offer the full range of our services.</dd>
                                     </dl>
                                 </div>
                             </details>
                             <input type="checkbox" name="agree">
-                            <span>個人情報の取り扱いについてご同意いただける場合は、チェックをしてください。</span>
+                            <span>Please check this box if you agree to the handling of your personal information.</span>
                         </div>
                     </div>
-                    <input type="image" src="images/button-submit.png" alt="送信する">
+                    <input type="image" src="images/button-submit.png" alt="sending">
                 </form>
             </section>
         </article>
@@ -390,9 +384,9 @@
         </div>
         <div id="sns-footer">
             <div class="sns-btns">
-                <a href="https://www.facebook.com/sejuku2013"><img src="images/button-facebook.png" alt="Facebookのリンク"></a>
-                <a href="https://twitter.com/samuraijuku"><img src="images/button-twitter.png" alt="Twitterのリンク"></a>
-                <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g"><img src="images/button-youtube.png" alt="YouTubeのリンク"></a>
+                <a href="https://www.facebook.com/sejuku2013"><img src="images/button-facebook.png" alt="Follow us on Facebook"></a>
+                <a href="https://twitter.com/samuraijuku"><img src="images/button-twitter.png" alt="Check out X"></a>
+                <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g"><img src="images/button-youtube.png" alt="link to YouTube"></a>
             </div>
             <p id="copyright">&copy;2021 SocialTech, Inc. All Rights Reserved.</p>
         </div>
